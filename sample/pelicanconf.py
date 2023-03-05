@@ -1,0 +1,33 @@
+SITENAME = 'pelican_feed_generator test'
+SITEURL = 'http://localhost:8000'
+
+TIMEZONE = 'Europe/Rome'
+DEFAULT_LANG = 'en'
+DEFAULT_PAGINATION = False
+FEED_ALL_ATOM = None
+CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
+
+RELATIVE_URLS = True
+
+PATH = "content"
+OUTPUT_PATH = "build"
+
+STATIC_PATHS = [
+    "static",
+]
+
+PLUGIN_PATHS = [
+    "../pelican/plugins",
+]
+
+PLUGINS = [
+    "feed_xslt",
+]
+
+FEED_RSS = "rss.xml"
+FEED_ALL_RSS = "rss-all.xml"
+
+XSLT_PATH_RSS = "static/rss.xsl"
